@@ -4,13 +4,13 @@ import os
 from pathlib import Path
 
 #DEFINE OUTPUT AND INPUT FILES
-INPUT_FOLDER=Path('./PDF_compressor/ogPDF')
-OUTPUT_FOLDER=Path('./PDF_compressor/compressedPDF')
-ARCHIVE_FOLDER=Path('./PDF_compressor/archivePDF')
+INPUT_FOLDER=Path('./ogPDF')
+OUTPUT_FOLDER=Path('./compressedPDF')
+ARCHIVE_FOLDER=Path('./archivePDF')
 
 #if the outputs folders dont exist the prog creates it
 for folder in [OUTPUT_FOLDER,ARCHIVE_FOLDER]:
-        folder.mkdir(exist_ok=True)
+        folder.mkdir(parents=True, exist_ok=True)
 
 #def compress_pdf(input, output): 
 #    doc = fitz.open(input)
