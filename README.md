@@ -20,15 +20,11 @@ Open a terminal (PowerShell on Windows or Terminal on Unix) in the project folde
   pip install pathlib
   pip install pymupdf
   pip install shutil
-
-
 ## How to use
 
 * Simply put all the pdf files you want to compress inside the **ogPDF** folder and run the following command in your terminal in the right directory
 * ```Terminal/shell
   python PDFcompression.py
-  
-
 ## Warning 
 * if your file is to light (less than 1mb) the compressed file might me heavier than the original one but wont go over a certain limit (this will be corrected in a future update)
 
